@@ -60,7 +60,6 @@ class Notifications {
 	 * - @var array[integer] user_ids
 	 * - @var string message
 	 * - @var string fragment
-	 * - @var integer group_id
 	 * @throws VKClientException
 	 * @throws VKApiException
 	 * @throws VKApiGroupAppIsNotInstalledInCommunityException Application is not installed in community

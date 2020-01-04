@@ -53,6 +53,11 @@ class VKApiRequest {
         $this->language = $language;
     }
 
+    public function setProxy($hostPost, $type)
+    {
+        $this->http_client->setProxy($hostPost, $type);
+    }
+
     /**
      * Makes post request.
      *

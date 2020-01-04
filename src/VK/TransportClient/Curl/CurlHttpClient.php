@@ -28,6 +28,12 @@ class CurlHttpClient implements TransportClient {
         );
     }
 
+    public function setProxy($hostPost, $type)
+    {
+        $this->initial_opts[CURLOPT_PROXY] = $hostPost;
+        $this->initial_opts[CURLOPT_PROXYTYPE] = $type;
+    }
+
     /**
      * Makes post request.
      *

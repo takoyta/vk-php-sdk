@@ -232,6 +232,11 @@ class VKApiClient {
         $this->request = new VKApiRequest($api_version, $language, self::API_HOST);
     }
 
+    public function setProxy($hostPost, $type)
+    {
+        $this->request->setProxy($hostPost, $type);
+    }
+
     /**
      * @return VKApiRequest
      */

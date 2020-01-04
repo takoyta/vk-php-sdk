@@ -9,7 +9,6 @@ use VK\Exceptions\Api\VKApiLimitsException;
 use VK\Exceptions\Api\VKApiMessagesCantChangeInviteLinkException;
 use VK\Exceptions\Api\VKApiMessagesCantDeleteForAllException;
 use VK\Exceptions\Api\VKApiMessagesCantFwdException;
-use VK\Exceptions\Api\VKApiMessagesCantPinOneTimeStoryException;
 use VK\Exceptions\Api\VKApiMessagesCantSeeInviteLinkException;
 use VK\Exceptions\Api\VKApiMessagesChatBotFeatureException;
 use VK\Exceptions\Api\VKApiMessagesChatNotAdminException;
@@ -547,7 +546,6 @@ class Messages {
 	 * @throws VKClientException
 	 * @throws VKApiException
 	 * @throws VKApiMessagesChatNotAdminException You are not admin of this chat
-	 * @throws VKApiMessagesCantPinOneTimeStoryException Cannot pin one-time story
 	 * @return mixed
 	 */
 	public function pin($access_token, array $params = []) {
