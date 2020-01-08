@@ -14,12 +14,12 @@ add to composer.json:
     [
       {
         "type": "vcs",
-        "url": "https://github.com/takoyta/vk-php-sdk"
+        "url": "https://github.com/takoyta/vk-proxy"
       }
     ],
     ...
     "require": {
-      "takoyta/vk-php-sdk": "dev-master"
+      "takoyta/vk-proxy": "dev-master"
 ```
 
 ## 3. Initialization
