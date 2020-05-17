@@ -1,11 +1,15 @@
 # vk-php-sdk with proxy
 
+## 1. Changes regarding the official package
 
-## 1. Prerequisites
+* Proxy support added
+* Method execute() for executing VKScript code
+
+## 2. Prerequisites
 
 * PHP 7.1 or later
 
-## 2. Installation
+## 3. Installation
 
 add to composer.json:
 
@@ -22,7 +26,7 @@ add to composer.json:
       "takoyta/vk-proxy": "dev-master"
 ```
 
-## 3. Initialization
+## 4. Initialization
 
 Create VKApiClient object using the following code:
 

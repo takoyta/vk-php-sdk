@@ -129,4 +129,18 @@ class Utils {
 	public function resolveScreenName($access_token, array $params = []) {
 		return $this->request->post('utils.resolveScreenName', $access_token, $params);
 	}
+
+    /**
+     * method execute()
+     *
+     * @param string $access_token
+     * @param array $params
+     * - @var string code: VKScript code.
+     * @throws VKClientException
+     * @throws VKApiException
+     * @return mixed
+     */
+    public function execute($access_token, array $params = []) {
+        return $this->request->post('execute', $access_token, $params);
+    }
 }
